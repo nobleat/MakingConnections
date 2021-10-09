@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="nav_header">
+        <h1 id="profile_btn">Profile</h1>
+        <ul class="nav_links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#" class="active">My Profile</a></li>
+            <li><a href="#">Find Connections</a></li>
+        </ul>
+        <button class="btn">Sign Out </button>
+    </div>
+
+<div id="whole">
+    <div id="left">
+        <div class="container">
+            <div class="header"> 
+                <img src="icons\jane-m.jpg"   alt="Profile Icon" class="img">
+            </div>
+            <div class="profile">
+                <h1 id="name">Jane Doe</h1>
+                <div class="location">
+                    <img src="icons\map-marker.png" alt="Map Pin" class="img-2"></img>
+                    <h2 class="place">Seattle</h2>
+                </div>
+                <div class="job">
+                    <p>Developer | Engineer | Problem Solver</p>
+                    <p>Master of the shadows and the Internet</p>
+                </div>
+                <div class="edit">
+                    <img src="icons\gear.png" alt="Gear Icon" class="img-3">
+                    <a href="#" class="edit" onclick="edit()">edit profile</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="edu_box">
+                <div class="edu_head">
+                    <h2>Education</h2>
+                    <h3>Coding Dojo - Full Stack Bootcamp</h3>
+                    <h5>Dec 2019 - Mar 2020
+                    </h5>
+                    <p class="p_edu">Triple black belt in Python, MERN, and C#...
+                    </p>
+                </div>
+            </div>
+            
+        </div>
+    <div id="right">
+        <div id="con_box">
+            <div class="con_req">
+                <h2><span id="req_count">2</span> Connection Requests</h2>
+                <div class="todd"><ul><span id="toddE">
+                    <li><img src="icons\todd-s.jpg" alt="Todd E" class="img_con">Todd E</li>
+                    <li><img src="icons\accept-circle.png" alt="accept" class="acc_den" onclick="hide()"></li>
+                    <li><img src="icons\close-circle.png" alt="deny" class="acc_den" onclick="hide()"></li></span>
+                    <span id="PhilK"><li><img src="icons\phil-s.jpg" alt="Phil K" class="img_con">Phil K</li>
+                        <li><img src="icons\accept-circle.png" alt="accept" class="acc_den"></li>
+                        <li><img src="icons\close-circle.png" alt="deny" class="acc_den"></li></span>
+                    </ul>
+                    </div>
+            </div>
+        </div>
+        <div id="connect">
+            <div class="you_con">
+                <h2><span id="con_count">418</span> Your Connections</h2>
+            </div>
+            <ul class="con_ids">
+                <li><img src="icons\adrien-s.jpg" alt="Adrien D" class="img_con">Adrien D</li>
+                <li><img src="icons\anne-s.jpg" alt="Anne J" class="img_con">Anne J</li>
+                <li><img src="icons\adrien-s.jpg" alt="Alayne T" class="img_con">Alayne T</li>
+                <li><img src="icons\arry-s.jpg" alt="Arry Y" class="img_con">Arry Y</li>
+            </ul>
+            <div class="view">
+                <a href="#" class="more">View More</a>
+                    </div>
+        </div>
+    </div>
+</div>
+</body>
+<script src="script.js"></script>
+</html>
